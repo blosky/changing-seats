@@ -21,7 +21,7 @@ function ActiveMap(url,options) {
 
 		container.node()
 		  	.appendChild(svgXML.documentElement);
-
+		return;
 		svg=container
 				.select("svg");
 
