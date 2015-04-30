@@ -21,7 +21,7 @@ function ActiveMap(url,options) {
 
 		container.node()
 		  	.appendChild(svgXML.documentElement);
-		return;
+
 		svg=container
 				.select("svg");
 
@@ -36,6 +36,8 @@ function ActiveMap(url,options) {
 		translate=[-viewBox[0],-viewBox[1]];
 		
 		setCentroids();
+
+		console.log("1")
 		
 		/*svg.on("mousemove",function(d){
 				var coords=d3.mouse(this);
