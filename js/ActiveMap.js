@@ -27,8 +27,8 @@ function ActiveMap(url,options) {
 
 		var bbox=svg.node().getBoundingClientRect();
 
-		svg.select(options.active[0]).style("display","block");
-		svg.select(options.inactive[0]).style("display","none");
+		//svg.select(options.active[0]).style("display","block");
+		//svg.select(options.inactive[0]).style("display","none");
 
 		var viewBox=svg.attr("viewBox").split(" ");
 
@@ -37,7 +37,7 @@ function ActiveMap(url,options) {
 		
 		setCentroids();
 
-		console.log("1")
+		console.log("2")
 		
 		/*svg.on("mousemove",function(d){
 				var coords=d3.mouse(this);
