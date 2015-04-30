@@ -23,6 +23,8 @@
 		ul{position: relative; float: left; padding: 0; margin: 0;}
 		li{ display: inline; float:left; position: relative;}
 		/*.constituency_list li{height:50px;}*/
+		.constituency_list{margin-bottom: 40px; position: relative; float: left;}
+		.constituency{margin: 0 1px 3px 0}
 		.constituency a{
 			background-color: #005689;
 			color:white;
@@ -31,436 +33,457 @@
 			vertical-align: top;
 			text-decoration: none;
 			/*height: 24px;*/
-			padding: 0px 6px;
-			margin: 0px 3px;
+			padding: 6px;
 			border: 1px solid #D4D4D4;
 			border-radius: 24px;
 			box-sizing: border-box;
 			display: inline-block;
 		}
-			.party_key{position: relative; float: left; width: 100%;margin-bottom:18px;}
-			.party_key div{float: left; position: relative;}
-			.party_key p{float: left; position: relative; margin: 0; padding: 0;}
-			.keycolor{
-				border-radius: 2px;
-				width: 8px;
-				height: 20px;
-				margin-right: 5px;
-				margin-bottom: 2px;
-				border-radius: 2px;
-				display: inline-block;
-				vertical-align: middle;}
-				#libdem{background-color: #FFB900;}
+		.party_key{position: relative; float: left; width: 100%;margin-bottom:18px;}
+		.party_key div{float: left; position: relative;}
+		.party_key p{float: left; position: relative; margin: 0; padding: 0;}
+		.keycolor
+		{
+			border-radius: 2px;
+			width: 8px;
+			height: 20px;
+			margin-right: 5px;
+			margin-bottom: 2px;
+			border-radius: 2px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		#libdem{background-color: #FFB900;}
 
-				h1 {
-					font-family: "Guardian Egyptian Web",Georgia,serif;
-					font-size: 32px;
-					font-weight: normal;
-					color: #000;
-					line-height: 38px;
-				}
+		h1 {
+			font-family: "Guardian Egyptian Web",Georgia,serif;
+			font-size: 32px;
+			font-weight: normal;
+			color: #000;
+			line-height: 38px;
+		}
 
-				.f-standfirst {
-					font-family: "Guardian Text Egyptian Web",Georgia,serif;
-					font-size: 18px;
-					color: #767676;
-				}
+		.f-standfirst {
+			font-family: "Guardian Text Egyptian Web",Georgia,serif;
+			font-size: 18px;
+			color: #767676;
+		}
 
-				svg {max-height:100%;}
-
-
-				#map{width: 48%; position: relative; float: left;border:1px solid green;}
-
-
-				@media screen and (max-width: 600px) {
-
-					#map{width: 100%;}
-					.text_content{width:100%;}
-				}
-				</style>
-
-			</head>
-			<body>
-				<div id="container">
-					<div id="lab_container" class='module'>
-						<div class='text_content'>
-							<h1>If you want labour party to win...</h1>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
-							</div>
-							<div id='constituency_list1' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-									<a href="#" class='E14000530'>Aldershot</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000547'>Bath</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000554'>Berwick-upon-Tweed</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000934'>South Cambridgeshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000937'>South East Cambridgeshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000621'>Carshalton and Wallington</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000627'>Cheadle</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000628'>Chelmsford</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000630'>Cheltenham</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000635'>Chippenham</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000644'>Colchester</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000837'>North Cornwall</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000938'>South East Cornwall</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000991'>The Cotswolds</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000623'>Central Devon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000838'>North Devon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001000'>Torridge and West Devon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000815'>Mid Dorset and North Poole</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000839'>North Dorset</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001031'>West Dorset</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000684'>Eastbourne</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000685'>Eastleigh</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000704'>Folkestone and Hythe</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000719'>Guildford</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000680'>East Hampshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000730'>Harrogate and Knaresborough</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000738'>Hazel Grove</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000743'>Hereford and South Herefordshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000847'>North Herefordshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000753'>Horsham</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000762'>Isle of Wight</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000770'>Kingston and Surbiton</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000786'>Lewes</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000799'>Ludlow</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000803'>Maidenhead</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000804'>Maidstone and The Weald</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000811'>Meon Valley</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000827'>New Forest East</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000830'>Newbury</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000835'>Newton Abbot</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000848'>North Norfolk</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000874'>Oxford West and Abingdon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000881'>Poole</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000884'>Portsmouth South</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000896'>Richmond Park</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000901'>Romsey and Southampton North</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000960'>St Albans</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000961'>St Austell and Newquay</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000964'>St Ives</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000912'>Salisbury</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000928'>Skipton and Ripon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000931'>Solihull</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000850'>North Somerset</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000932'>Somerton and Frome</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000958'>Southport</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000977'>Stratford-on-Avon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000953'>South West Surrey</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='Mid'>Sussex</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000984'>Sutton and Cheam</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000988'>Taunton Deane</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000990'>Tewkesbury</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000994'>Thornbury and Yate</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000996'>Tiverton and Honiton</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000999'>Torbay</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001001'>Totnes</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001005'>Twickenham</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001026'>Wells</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001037'>Westmorland and Lonsdale</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001038'>Weston-Super-Mare</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000860'>North Wiltshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001041'>Winchester</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001047'>Woking</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001035'>West Worcestershire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001060'>Yeovil</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14001062'>York Outer</a>
-									</li>
-								</ul>
-							</div>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for PC in this constituencies:</p>
-							</div>
-							<div id='constituency_list2' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-										<a href="#" class='W07000067'>Dwfor Meirionydd</a>
-									</li>
-								</ul>
-							</div>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for Ukip in this constituencies:</p>
-							</div>
-							<div id='constituency_list3' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-									<a href="#" class='E14000898'>Rochester and Strood</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='E14000622'>Castle Point</a>
-									</li>
-								</ul>
-							</div>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for SNP in this constituencies:</p>
-							</div>
-							<div id='constituency_list4' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-									<a href="#" class='S14000039'>Inverness, Nairn, Badenoch and Strathspey</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000037'>Gordon</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000049'>Fife North East</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000051'>Orkney and Shetland</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000026'>Edinburgh West</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000055'>Ross, Skye and Lochaber</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000008'>Berwickshire, Roxburgh and Selkirk</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000005'>Argyll and Bute</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000058'>West Aberdeenshire and Kincardine</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000018'>East Dunbartonshire</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000009'>Caithness Sutherland and Easter Ross</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000014'>Dumfriesshire, Clydesdale and Tweeddale</a>
-									</li>
-									<li class='constituency'>
-									<a href="#" class='S14000013'>Dumfries and Galloway</a>
-									</li>
-								</ul>
-							</div>
-
-						</div>
-						
+		svg {max-height:100%;}
 
 
-
-						<div id='map_lab'></div>
-					</div>
+		#map{width: 48%; position: relative; float: left;border:1px solid green;}
 
 
-					<div id="con_container" class='module'>
+		@media screen and (max-width: 600px){
 
-						<div class='text_content'>
-							<h1>If you want tories to win...</h1>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
-							</div>
-							<div id='constituency_list1' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-										<a href="#">Aldershot</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+			#map{width: 100%;}
+			.text_content{width:100%;}
+		}
+	</style>
 
-						<div id='map_con'></div>
-					</div>
+</head>
+<body>
+	<div id="container">
+		<div id="lab_container" class='module'>
+			<h1>If you want labour party to win...</h1>
+			<div class='text_content'>
+				
+				<div id="party_key1" class="party_key">
+					<div id="libdem" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
+				</div>
+				<div id='constituency_list1' class='constituency_list'>
+					<ul>
+						<li class='constituency'>
+							<a href="#" class='E14000530'>Aldershot</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000547'>Bath</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000554'>Berwick-upon-Tweed</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000934'>South Cambridgeshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000937'>South East Cambridgeshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000621'>Carshalton and Wallington</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000627'>Cheadle</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000628'>Chelmsford</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000630'>Cheltenham</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000635'>Chippenham</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000644'>Colchester</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000837'>North Cornwall</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000938'>South East Cornwall</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000991'>The Cotswolds</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000623'>Central Devon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000838'>North Devon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001000'>Torridge and West Devon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000815'>Mid Dorset and North Poole</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000839'>North Dorset</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001031'>West Dorset</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000684'>Eastbourne</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000685'>Eastleigh</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000704'>Folkestone and Hythe</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000719'>Guildford</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000680'>East Hampshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000730'>Harrogate and Knaresborough</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000738'>Hazel Grove</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000743'>Hereford and South Herefordshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000847'>North Herefordshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000753'>Horsham</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000762'>Isle of Wight</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000770'>Kingston and Surbiton</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000786'>Lewes</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000799'>Ludlow</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000803'>Maidenhead</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000804'>Maidstone and The Weald</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000811'>Meon Valley</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000827'>New Forest East</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000830'>Newbury</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000835'>Newton Abbot</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000848'>North Norfolk</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000874'>Oxford West and Abingdon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000881'>Poole</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000884'>Portsmouth South</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000896'>Richmond Park</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000901'>Romsey and Southampton North</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000960'>St Albans</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000961'>St Austell and Newquay</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000964'>St Ives</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000912'>Salisbury</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000928'>Skipton and Ripon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000931'>Solihull</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000850'>North Somerset</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000932'>Somerton and Frome</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000958'>Southport</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000977'>Stratford-on-Avon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000953'>South West Surrey</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='Mid'>Sussex</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000984'>Sutton and Cheam</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000988'>Taunton Deane</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000990'>Tewkesbury</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000994'>Thornbury and Yate</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000996'>Tiverton and Honiton</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000999'>Torbay</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001001'>Totnes</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001005'>Twickenham</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001026'>Wells</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001037'>Westmorland and Lonsdale</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001038'>Weston-Super-Mare</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000860'>North Wiltshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001041'>Winchester</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001047'>Woking</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001035'>West Worcestershire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001060'>Yeovil</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14001062'>York Outer</a>
+						</li>
+					</ul>
+				</div>
+				<div id="party_key1" class="party_key">
+					<div id="libdem" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for PC in this constituencies:</p>
+				</div>
+				<div id='constituency_list2' class='constituency_list'>
+					<ul>
+						<li class='constituency'>
+							<a href="#" class='W07000067'>Dwfor Meirionydd</a>
+						</li>
+					</ul>
+				</div>
+				<div id="party_key1" class="party_key">
+					<div id="libdem" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for Ukip in this constituencies:</p>
+				</div>
+				<div id='constituency_list3' class='constituency_list'>
+					<ul>
+						<li class='constituency'>
+							<a href="#" class='E14000898'>Rochester and Strood</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='E14000622'>Castle Point</a>
+						</li>
+					</ul>
+				</div>
+				<div id="party_key1" class="party_key">
+					<div id="libdem" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for SNP in this constituencies:</p>
+				</div>
+				<div id='constituency_list4' class='constituency_list'>
+					<ul>
+						<li class='constituency'>
+							<a href="#" class='S14000039'>Inverness, Nairn, Badenoch and Strathspey</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000037'>Gordon</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000049'>Fife North East</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000051'>Orkney and Shetland</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000026'>Edinburgh West</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000055'>Ross, Skye and Lochaber</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000008'>Berwickshire, Roxburgh and Selkirk</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000005'>Argyll and Bute</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000058'>West Aberdeenshire and Kincardine</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000018'>East Dunbartonshire</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000009'>Caithness Sutherland and Easter Ross</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000014'>Dumfriesshire, Clydesdale and Tweeddale</a>
+						</li>
+						<li class='constituency'>
+							<a href="#" class='S14000013'>Dumfries and Galloway</a>
+						</li>
+					</ul>
 				</div>
 
-
-				<script type="text/javascript">
-
+			</div>
 
 
-					var map_labour=new ActiveMap("lab_con.svg",{
-						container:"#map_lab",
-						active:["#lab"],
-						inactive:["#con "],
-						callback:function(constituency,coords){
-
-							console.log(constituency,coords);
-
-							constituency.paths.forEach(function(p){
-								map_labour.getSVG().select("#"+p)
-								.style("fill","#333");
-							});
-						}
-					})
-/*
-					var map_conservative=new ActiveMap("lab_con.svg",{
-						container:"#map_con",
-						active:["#con"],
-						inactive:["#lab "],
-						callback:function(constituency,coords){
-
-							console.log(constituency,coords);
-
-							constituency.paths.forEach(function(p){
-								map_conservative.getSVG().select("#"+p)
-								.style("fill","#333");
-							});
-						}
-					})
-*/
 
 
-					/*http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json*/
+			<div id='map_lab'></div>
+		</div>
 
-				</script>
-			</body>
-			</html>
+
+		<div id="con_container" class='module'>
+			<h1>If you want tories to win...</h1>
+			<div class='text_content'>
+				
+				<div id="party_key1" class="party_key">
+					<div id="libdem" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
+				</div>
+				<div id='constituency_list1' class='constituency_list'>
+					<ul>
+						<li class='constituency'>
+							<a href="#">Aldershot</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id='map_con'></div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+
+
+		var data; // a global
+
+		d3.json("http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json", function(error, json)
+		{
+			if (error) return console.warn(error);
+			data = json;
+
+
+
+			data.sheets.Sheet1.forEach(function(d)
+				{
+					console.log(d)
+				});
+			
+			//visualizeit();
+		});
+
+
+
+		var map_labour=new ActiveMap("lab_con.svg",{
+			container:"#map_lab",
+			active:["#lab"],
+			inactive:["#con"],
+			callback:function(constituency,coords){
+
+				console.log(constituency,coords);
+
+				constituency.paths.forEach(function(p){
+					map_labour.getSVG().select("#"+p)
+					.style("fill","#333");
+				});
+			}
+		})
+
+		var map_conservative=new ActiveMap("lab_con.svg",{
+			container:"#map_con",
+			active:["#con"],
+			inactive:["#lab"],
+			callback:function(constituency,coords){
+
+				console.log(constituency,coords);
+
+				constituency.paths.forEach(function(p){
+					map_conservative.getSVG().select("#"+p)
+					.style("fill","#333");
+				});
+			}
+		})
+
+
+
+		/*http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json*/
+
+	</script>
+</body>
+</html>
 
