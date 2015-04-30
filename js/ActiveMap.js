@@ -37,7 +37,7 @@ function ActiveMap(url,options) {
 		
 		//setCentroids();
 
-		console.log("3")
+		console.log("4")
 		
 		/*svg.on("mousemove",function(d){
 				var coords=d3.mouse(this);
