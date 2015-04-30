@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		svg {
+			border:1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/ActiveMap.js"></script>
+	<script>
+
+		var map=new ActiveMap("lab_con.svg",{
+			container:"#map",
+			active:["#con"],
+			inactive:["#lab"],
+			callback:function(constituency,coords){
+
+				console.log(constituency,coords);
+
+				constituency.paths.forEach(function(p){
+					map.getSVG().select("#"+p)
+						.style("fill","#333");
+				});
+			}
+		})
+
+		
+
+		
+	</script>
+</body>
+</html>
