@@ -37,7 +37,7 @@ function ActiveMap(url,options) {
 		
 		setCentroids();
 		
-		svg.on("mousemove",function(d){
+		/*svg.on("mousemove",function(d){
 				var coords=d3.mouse(this);
 
 				var closest=findClosest(coords,translate,scale);
@@ -48,7 +48,7 @@ function ActiveMap(url,options) {
 						options.callback(closest,[(closest.centroid[0]-viewBox[0])*scale,(closest.centroid[1]-viewBox[1])*scale]);
 					}
 				}
-		});
+		});*/
 
 		
 
