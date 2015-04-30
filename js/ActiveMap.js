@@ -22,22 +22,22 @@ function ActiveMap(url,options) {
 		container.node()
 		  	.appendChild(svgXML.documentElement);
 
-		svg=container
-				.select("svg");
+		//svg=container
+		//		.select("svg");
 
-		var bbox=svg.node().getBoundingClientRect();
+		//var bbox=svg.node().getBoundingClientRect();
 
 		//svg.select(options.active[0]).style("display","block");
 		//svg.select(options.inactive[0]).style("display","none");
 
-		var viewBox=svg.attr("viewBox").split(" ");
+		//var viewBox=svg.attr("viewBox").split(" ");
 
-		scale=bbox.width / viewBox[2];
-		translate=[-viewBox[0],-viewBox[1]];
+		//scale=bbox.width / viewBox[2];
+		//translate=[-viewBox[0],-viewBox[1]];
 		
-		setCentroids();
+		//setCentroids();
 
-		console.log("2")
+		console.log("3")
 		
 		/*svg.on("mousemove",function(d){
 				var coords=d3.mouse(this);
