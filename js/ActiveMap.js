@@ -15,7 +15,7 @@ function ActiveMap(url,options) {
 		createMap(xml);
 
 	});
-
+	var clone;
 	function createMap(svgXML) {
 
 		container=d3.select(options.container || "body");
@@ -51,9 +51,19 @@ function ActiveMap(url,options) {
 				}
 		});
 
-		
+		clone=svg.append("g").attr("id","clone")
+							.append("path")
+							.attr("class","selected")
 
 		
+	}
+	//setClone("MXXX,XXXLXX,XX") to show a path, setClone() to hide
+	this.setClone=function(path) {
+		if(!path) {
+			clone.attr("d","");
+			return;
+		}
+		clone.attr("d",path);
 	}
 
 	function setCentroids() {

@@ -98,6 +98,12 @@
 
 		#mobile_container{position: relative; float: left; display: none;}
 
+		
+		svg path.selected {
+			  stroke: rgb(255, 0, 0);
+			  stroke-width: 2px;
+			  fill: rgb(51, 51, 51);
+		}
 
 		@media screen and (max-width: 620px){
 
@@ -260,7 +266,7 @@
 
 		var data; // a global
 		var parties =[];
-
+		var map_labour;
 
 		d3.json("http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json", function(error, json)
 		{
@@ -302,15 +308,20 @@
 			if(document.getElementById(this.id).parentNode.parentNode.parentNode.parentNode.parentNode.id == 'lab_container')
 			{
 
-				var path = d3.select('#lab_map #lab #' + this.id + "_2_")[0][0];
-
+				var path = d3.select('#lab_map #lab #' + this.id + "_2_").attr("d");//[0][0];
+				/*
 				d3.selectAll('#lab_map #lab path')
-				.style('stroke','#FFFFFF')
-				.style('stroke-width',1);
+					.classed("selected",false)
+				//.style('stroke','#FFFFFF')
+				//.style('stroke-width',1);
 
 				d3.select('#lab_map #lab #' + this.id + "_2_")
-				.style('stroke', '#FF0000')
-				.style('stroke-width', 2);
+					.classed("selected",true)
+				//.style('stroke', '#FF0000')
+				//.style('stroke-width', 2)
+				//.moveToFront();
+				*/
+				map_labour.setClone(path);
 
 				d3.selectAll('.constituency').attr('class', 'constituency');
 				d3.select(this).attr('class', 'constituency selected');
@@ -333,7 +344,7 @@
 
 
 
-		var map_labour=new ActiveMap("lab_con.svg",{
+		map_labour=new ActiveMap("lab_con.svg",{
 			container:"#lab_map",
 			active:["#lab"],
 			inactive:["#con"],
@@ -365,7 +376,11 @@
 			}
 		})
 
-
+		d3.selection.prototype.moveToFront = function() {
+		  return this.each(function(){
+		    this.parentNode.appendChild(this);
+		  });
+		};
 
 		/*http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json*/
 
