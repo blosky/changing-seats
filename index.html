@@ -50,7 +50,7 @@
 		}
 		.party_key{position: relative; float: left; width: 100%;margin-bottom:18px;}
 		.party_key div{float: left; position: relative;}
-		.party_key p{float: left; position: relative; margin: 0; padding: 0;}
+		.party_key p{float: left; position: relative; margin: 0; padding: 0; margin: 0 0 18px 0;}
 		.keycolor
 		{
 			border-radius: 2px;
@@ -61,6 +61,7 @@
 			border-radius: 2px;
 			display: inline-block;
 			vertical-align: middle;
+			top: -3px;
 		}
 
 
@@ -100,9 +101,9 @@
 
 		
 		svg path.selected {
-			  stroke: rgb(255, 0, 0);
+			  stroke: #333333;
 			  stroke-width: 2px;
-			  fill: rgb(51, 51, 51);
+			  fill: none;
 		}
 
 		@media screen and (max-width: 620px){
@@ -354,9 +355,14 @@
 
 				constituency.paths.forEach(function(p){
 					map_labour.getSVG().select("#"+p)
-					.style("fill","#333");
+					.style("stroke","#333");
 
-					console.log(map_labour.getSVG().select("#"+p))
+
+					var path = map_labour.getSVG().select("#"+p).attr("d")
+
+					map_labour.setClone(path);
+
+					//console.log(map_labour.getSVG().select("#"+p))
 				});
 			}
 		})
@@ -371,7 +377,7 @@
 
 				constituency.paths.forEach(function(p){
 					map_conservative.getSVG().select("#"+p)
-					.style("fill","#333");
+					.style("stroke","#333");
 				});
 			}
 		})
