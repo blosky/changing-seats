@@ -110,9 +110,19 @@
 
 			#map{width: 100%;}
 			.text_content{width:100%;}
-			#mobile_container{display:block;}
-			#container{display: none;}
+			/*#mobile_container{display:block;}
+			#container{display: none;}*/
 			#con_container{display: none;}
+
+
+			ul {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  width: 10000px;
+}
 		}
 	</style>
 
@@ -310,21 +320,10 @@
 			{
 
 				var path = d3.select('#lab_map #lab #' + this.id + "_2_").attr("d");//[0][0];
-				/*
-				d3.selectAll('#lab_map #lab path')
-					.classed("selected",false)
-				//.style('stroke','#FFFFFF')
-				//.style('stroke-width',1);
 
-				d3.select('#lab_map #lab #' + this.id + "_2_")
-					.classed("selected",true)
-				//.style('stroke', '#FF0000')
-				//.style('stroke-width', 2)
-				//.moveToFront();
-				*/
 				map_labour.setClone(path);
 
-				d3.selectAll('.constituency').attr('class', 'constituency');
+				d3.selectAll('.constituency_list .constituency').attr('class', 'constituency');
 				d3.select(this).attr('class', 'constituency selected');
 			}
 
@@ -348,10 +347,11 @@
 		map_labour=new ActiveMap("lab_con.svg",{
 			container:"#lab_map",
 			active:["#lab"],
-			inactive:["#con"],
+			inactive:["#con"],	
 			callback:function(constituency,coords){
 
-				//console.log(constituency,coords);
+				d3.selectAll(".selected").classed("selected",false)
+				d3.select("#" + constituency.id).classed("selected", true);
 
 				constituency.paths.forEach(function(p){
 					map_labour.getSVG().select("#"+p)
@@ -360,10 +360,20 @@
 
 					var path = map_labour.getSVG().select("#"+p).attr("d")
 
+
+
+
 					map_labour.setClone(path);
 
+					
 					//console.log(map_labour.getSVG().select("#"+p))
 				});
+			},
+			callbackOut:function(constituency){
+
+				console.log(constituency)
+
+				//d3.select("#" + constituency.id).classed("selected", false);
 			}
 		})
 
@@ -373,7 +383,7 @@
 			inactive:["#lab"],
 			callback:function(constituency,coords){
 
-				console.log(constituency,coords);
+				//console.log(constituency,coords);
 
 				constituency.paths.forEach(function(p){
 					map_conservative.getSVG().select("#"+p)

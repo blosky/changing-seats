@@ -49,7 +49,15 @@ function ActiveMap(url,options) {
 						options.callback(closest,[(closest.centroid[0]-viewBox[0])*scale,(closest.centroid[1]-viewBox[1])*scale]);
 					}
 				}
-		});
+		})
+		.on("mouseout", function(d){
+			var coords=d3.mouse(this);
+			var closest=findClosest(coords,translate,scale);
+				if(options.callbackOut)
+				{
+					options.callbackOut(closest);
+				}
+		})
 
 		clone=svg.append("g").attr("id","clone")
 							.append("path")
