@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Changing seats</title>
 	<meta charset="utf-8">
 
@@ -14,154 +16,360 @@
 		@font-face{font-family:"Guardian Text Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.svg#GuardianTextEgyptianWeb-Regular") format("svg");font-weight:400;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Text Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.svg#GuardianTextEgyptianWeb-RegularItalic") format("svg");font-weight:400;font-style:italic;font-stretch:normal}@font-face{font-family:"Guardian Text Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.svg#GuardianTextEgyptianWeb-Medium") format("svg");font-weight:700;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.svg#GuardianEgyptianWeb-Light") format("svg");font-weight:200;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.svg#GuardianEgyptianWeb-Regular") format("svg");font-weight:400;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.svg#GuardianEgyptianWeb-Medium") format("svg");font-weight:500;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Egyptian Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.svg#GuardianEgyptianWeb-Semibold") format("svg");font-weight:900;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Text Sans Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.svg#GuardianTextSansWeb-Regular") format("svg");font-weight:400;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Text Sans Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.svg#GuardianTextSansWeb-RegularItalic") format("svg");font-weight:400;font-style:italic;font-stretch:normal}@font-face{font-family:"Guardian Text Sans Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.svg#GuardianTextSansWeb-Medium") format("svg");font-weight:700;font-style:normal;font-stretch:normal}@font-face{font-family:"Guardian Sans Web";src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.eot");src:url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.eot?#iefix") format("embedded-opentype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.woff2") format("woff2"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.woff") format("woff"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.ttf") format("truetype"),url("//pasteup.guim.co.uk/fonts/0.1.0/hinting-on/kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.svg#GuardianSansWeb-Regular") format("svg");font-weight:400;font-style:normal;font-stretch:normal}
 
 
-		body{margin: 0; padding: 0;}
-		#container{width: 100%; height:auto; position:relative; float:left; border: 1px solid red;}
+		body{margin: 0; padding: 0; max-width:1028px;}
+		#container{width: 100%; position:relative; float:left;display: block;}
 		.module{width: 100%; margin:0 0 25px 0; position: relative; float: left;}
-		.text_content{width:50%; position:relative; float:left; border:1px solid green;}
-		ul{position: relative; float: left; padding: 0; margin: 0;height: auto;}
-		li{height:auto; display: inline; float:left; position: relative;}
-		.constituency_list li{height:50px;}
+		.text_content{width:44%; position:relative; float:left; }
+		ul{position: relative; float: left; padding: 0; margin: 0;}
+		li{ display: inline; float:left; position: relative;}
+		/*.constituency_list li{height:50px;}*/
+		.constituency_list{margin-bottom: 40px; position: relative; float: left;}
+		.constituency{margin: 0 1px 3px 0}
 		.constituency a{
-			background-color: #005689;
-			color:white;
-			font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-			font-size: 15px;
-			vertical-align: top;
-			text-decoration: none;
-			line-height: 24px;
-			width: auto;
-			height: 24px;
-			padding: 0px 6px;
-			margin: 0px 3px;
-			border: 1px solid #D4D4D4;
-			border-radius: 24px;
-			box-sizing: border-box;
-			display: inline-block;}
-			.party_key{position: relative; float: left; width: 100%;margin-bottom:18px;}
-			.party_key div{float: left; position: relative;}
-			.party_key p{float: left; position: relative; margin: 0; padding: 0;}
-			.keycolor{
-				border-radius: 2px;
-				width: 8px;
-				height: 20px;
-				margin-right: 5px;
-				margin-bottom: 2px;
-				border-radius: 2px;
-				display: inline-block;
-				vertical-align: middle;}
-				#libdem{background-color: #FFB900;}
+			  background-color: #f0f0f0;
+			  color: #767676;
+			  font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+			  font-size: 12px;
+			  vertical-align: top;
+			  text-decoration: none;
+			  /* height: 24px; */
+			  padding: 3px 6px;
+			  border: none;
+			  border-radius: 24px;
+			  box-sizing: border-box;
+			  /*display: inline-block;*/
+			  margin-left: 9px;
+			  margin-top: 8px;
+		}
 
-				h1 {
-					font-family: "Guardian Egyptian Web",Georgia,serif;
-					font-size: 32px;
-					font-weight: normal;
-					color: #000;
-					line-height: 38px;
-				}
+		.selected a
+		{
+			border: 3px solid black;
+			position: relative;
 
-				.f-standfirst {
-					font-family: "Guardian Text Egyptian Web",Georgia,serif;
-					font-size: 18px;
-					color: #767676;
-				}
+		}
+		.party_key{position: relative; float: left; width: 100%;margin-bottom:18px;}
+		.party_key div{float: left; position: relative;}
+		.party_key p{float: left; position: relative; margin: 0; padding: 0;}
+		.keycolor
+		{
+			border-radius: 2px;
+			width: 8px;
+			height: 20px;
+			margin-right: 5px;
+			margin-bottom: 2px;
+			border-radius: 2px;
+			display: inline-block;
+			vertical-align: middle;
+		}
 
 
+		#lib{background-color: #FFB900}
+		#alliance{background-color: #B3B3B4}
+		#pc{background-color: #868686}
+		#sdlp{background-color: #99FF66}
+		#sf{background-color: #7eaa58}
+		#snp{background-color: #FCDD03}
+		#ukip{background-color: #7D0069}
+		#uup{background-color: #99FF66}
+		#dup{background-color: #99002e}
+		#green{background-color: #33A22B}
 
 
-				#map{width: 48%; height: auto;position: relative; float: left;border:1px solid green;}
+
+		h1 {
+			font-family: "Guardian Egyptian Web",Georgia,serif;
+			font-size: 32px;
+			font-weight: normal;
+			color: #000;
+			line-height: 38px;
+		}
+
+		.f-standfirst {
+			font-family: "Guardian Text Egyptian Web",Georgia,serif;
+			font-size: 18px;
+			color: #767676;
+		}
+
+		svg {max-width-height:100%;}
 
 
-				@media screen and (max-width: 600px) {
+		#map{width: 48%; position: relative; float: right;}
 
-					#map{width: 100%;}
-					.text_content{width:100%;}
-				}
-				</style>
-
-			</head>
-			<body>
-				<div id="container">
-					<div id="lab_container" class='module'>
-						<div class='text_content'>
-							<h1>If you want labours to win...</h1>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
-							</div>
-							<div id='constituency_list1' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-										<a href="#">Aldershot</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div id='map_lab'></div>
-					</div>
+		#mobile_container{position: relative; float: left; display: none;}
 
 
-					<div id="con_container" class='module'>
+		@media screen and (max-width: 620px){
 
-						<div class='text_content'>
-							<h1>If you want tories to win...</h1>
-							<div id="party_key1" class="party_key">
-								<div id="libdem" class="keycolor"></div>
-								<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
-							</div>
-							<div id='constituency_list1' class='constituency_list'>
-								<ul>
-									<li class='constituency'>
-										<a href="#">Aldershot</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+			#map{width: 100%;}
+			.text_content{width:100%;}
+			#mobile_container{display:block;}
+			#container{display: none;}
+			#con_container{display: none;}
+		}
+	</style>
 
-						<div id='map_con'></div>
+</head>
+<body>
+	<div id="container">
+		<div id="lab_container" class='module'>
+			<h1>If you want labour party to win...</h1>
+			<div class='text_content'>
+
+				<div id="party_key1" class="party_key">
+					<div id="lib" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
+					<div id='lib_list' class='constituency_list'>
+						<ul>
+						</ul>
 					</div>
 				</div>
 
+				<div id="party_key2" class="party_key">
+					<div id="alliance" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for Alliance in this constituencies:</p>
+					<div id='alliance_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
 
-				<script type="text/javascript">
+				<div id="party_key3" class="party_key">
+					<div id="pc" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for PC in this constituencies:</p>
+					<div id='pc_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key4" class="party_key">
+					<div id="sdlp" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for SDLP in this constituencies:</p>
+					<div id='sdlp_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_ke5" class="party_key">
+					<div id="sf" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for SF in this constituencies:</p>
+					<div id='sf_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key6" class="party_key">
+					<div id="snp" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for SNP in this constituencies:</p>
+					<div id='snp_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key7" class="party_key">
+					<div id="ukip" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for Ukip in this constituencies:</p>
+					<div id='ukip_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key8" class="party_key">
+					<div id="green" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for Green in this constituencies:</p>
+					<div id='green_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div id='lab_map'></div>
+		</div>
+		
+
+
+		<div id="con_container" class='module'>
+			<h1>If you want tories to win...</h1>
+			<div class='text_content'>
+				
+				<div id="party_key1" class="party_key">
+					<div id="lib" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for LibDem in this constituencies:</p>
+					<div id='lib_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key2" class="party_key">
+					<div id="ukip" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for Ukip in this constituencies:</p>
+					<div id='ukip_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key3" class="party_key">
+					<div id="uup" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for UUP in this constituencies:</p>
+					<div id='uup_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key4" class="party_key">
+					<div id="sf" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for SF in this constituencies:</p>
+					<div id='sf_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+
+				<div id="party_key5" class="party_key">
+					<div id="dup" class="keycolor"></div>
+					<p class='f-standfirst'>Vote for DUP in this constituencies:</p>
+					<div id='dup_list' class='constituency_list'>
+						<ul>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+
+			<div id='map_con'></div>
+		</div>
+	</div>
+
+	<div id="mobile_container">
+		hola que tal
+	</div>
+
+
+	<script type="text/javascript">
 
 
 
-					var map_labour=new ActiveMap("lab_con.svg",{
-						container:"#map_lab",
-						active:["#lab"],
-						inactive:["#con "],
-						callback:function(constituency,coords){
-
-							console.log(constituency,coords);
-
-							constituency.paths.forEach(function(p){
-								map_labour.getSVG().select("#"+p)
-								.style("fill","#333");
-							});
-						}
-					})
-
-					var map_conservative=new ActiveMap("lab_con.svg",{
-						container:"#map_con",
-						active:["#con"],
-						inactive:["#lab "],
-						callback:function(constituency,coords){
-
-							console.log(constituency,coords);
-
-							constituency.paths.forEach(function(p){
-								map_conservative.getSVG().select("#"+p)
-								.style("fill","#333");
-							});
-						}
-					})
+		var data; // a global
+		var parties =[];
 
 
+		d3.json("http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json", function(error, json)
+		{
+			if (error) return console.warn(error);
+			data = json;
+			data.sheets.Sheet1.forEach(function(d)
+				{
+					parties.push(d.tacticalvote);
 
-					/*http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json*/
+					if(d.scenario == 'lab')
+					{
+						d3.select("#lab_container #" + d.tacticalvote + "_list ul")
+						.append("li")
+						.attr("class", "constituency")
+						.attr("id", d.proid)
+						.on('click', conClicked)
+						.append("a")
+						.html(d.name);
+					}
 
-				</script>
-			</body>
-			</html>
+					else
+					{
+						d3.select("#con_container #" + d.tacticalvote + "_list ul")
+						.append("li")
+						.attr("class", "constituency")
+						.attr("id", d.proid)
+						.on('click', conClicked)
+						.append("a")
+						.html(d.name);
+					}
+					
+				});
+			
+			//visualizeit();
+		});
+
+		function conClicked(event)
+		{
+			if(document.getElementById(this.id).parentNode.parentNode.parentNode.parentNode.parentNode.id == 'lab_container')
+			{
+
+				var path = d3.select('#lab_map #lab #' + this.id + "_2_")[0][0];
+
+				d3.selectAll('#lab_map #lab path')
+				.style('stroke','#FFFFFF')
+				.style('stroke-width',1);
+
+				d3.select('#lab_map #lab #' + this.id + "_2_")
+				.style('stroke', '#FF0000')
+				.style('stroke-width', 2);
+
+				d3.selectAll('.constituency').attr('class', 'constituency');
+				d3.select(this).attr('class', 'constituency selected');
+			}
+
+			else
+			{
+				d3.selectAll('#con_map #con path')
+				.style('stroke','#FFFFFF')
+				.style('stroke-width',1);
+
+				d3.select('#con_map #con #' + this.id + "_2_")
+				.style('stroke', '#FF0000')
+				.style('stroke-width', 2);
+
+				d3.selectAll('.constituency').attr('class', 'constituency');
+				d3.select(this).attr('class', 'constituency selected');
+			}
+		}
+
+
+
+		var map_labour=new ActiveMap("lab_con.svg",{
+			container:"#lab_map",
+			active:["#lab"],
+			inactive:["#con"],
+			callback:function(constituency,coords){
+
+				//console.log(constituency,coords);
+
+				constituency.paths.forEach(function(p){
+					map_labour.getSVG().select("#"+p)
+					.style("fill","#333");
+
+					console.log(map_labour.getSVG().select("#"+p))
+				});
+			}
+		})
+
+		var map_conservative=new ActiveMap("lab_con.svg",{
+			container:"#map_con",
+			active:["#con"],
+			inactive:["#lab"],
+			callback:function(constituency,coords){
+
+				console.log(constituency,coords);
+
+				constituency.paths.forEach(function(p){
+					map_conservative.getSVG().select("#"+p)
+					.style("fill","#333");
+				});
+			}
+		})
+
+
+
+		/*http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json*/
+
+	</script>
+</body>
+</html>
 
