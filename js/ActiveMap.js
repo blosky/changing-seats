@@ -69,7 +69,6 @@ function ActiveMap(url,options) {
 			constituencies_map[cid].centroids.push(getCentroid(this));
 			constituencies_map[cid].paths.push(id);
 		});
-		console.log(constituencies_map)
 
 		constituencies=d3.entries(constituencies_map).map(function(d){
 			return {
