@@ -24,7 +24,7 @@
 		li{ display: inline; float:left; position: relative;}
 		/*.constituency_list li{height:50px;}*/
 		.constituency_list{margin-bottom: 40px; position: relative; float: left;}
-		.constituency{margin: 0 1px 3px 0}
+		.constituency{margin: 0 1px 12px 0}
 		.constituency a{
 			  background-color: #f0f0f0;
 			  color: #767676;
@@ -34,7 +34,7 @@
 			  text-decoration: none;
 			  /* height: 24px; */
 			  padding: 3px 6px;
-			  border: none;
+			  border: 3px solid transparent;
 			  border-radius: 24px;
 			  box-sizing: border-box;
 			  /*display: inline-block;*/
@@ -95,7 +95,7 @@
 		svg {max-width-height:100%;}
 
 
-		#map{width: 48%; position: relative; float: right;}
+		#map{width: 48%; height:80%;position: fixed; float: right;}
 
 		#mobile_container{position: relative; float: left; display: none;}
 
@@ -106,13 +106,15 @@
 			  fill: none;
 		}
 
+		#tooltip{width:auto; height: auto; position: absolute; background-color: white; border: 1px solid grey;}
+
 		@media screen and (max-width: 620px){
 
 			#map{width: 100%;}
 			.text_content{width:100%;}
 			/*#mobile_container{display:block;}
 			#container{display: none;}*/
-			#con_container{display: none;}
+			/*#con_container{display: none;}
 			.constituency_list{
 			  width: 100%;
 			  overflow: hidden;
@@ -126,7 +128,7 @@
 			  margin: 0;
 			  height: 30px;
 			  width: 10000px;
-			}
+			}*/
 		}
 	</style>
 
@@ -268,6 +270,8 @@
 
 			<div id='map_con'></div>
 		</div>
+
+		<div id='tooltip'></div>
 	</div>
 
 	<div id="mobile_container">
@@ -283,7 +287,7 @@
 		var parties =[];
 		var map_labour;
 
-		d3.json("http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json", function(error, json)
+		d3.json("http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json?aa", function(error, json)
 		{
 			if (error) return console.warn(error);
 			data = json;
@@ -357,17 +361,21 @@
 				d3.selectAll(".selected").classed("selected",false)
 				d3.select("#" + constituency.id).classed("selected", true);
 
-				constituency.paths.forEach(function(p){
+				constituency.paths.forEach(function(p,i){
 					map_labour.getSVG().select("#"+p)
 					.style("stroke","#333");
 
 
 					var path = map_labour.getSVG().select("#"+p).attr("d")
 
-
+					console.log(String(data.sheets.Sheet1[i].proid) , constituency.id)
 
 
 					map_labour.setClone(path);
+
+					//console.log(constituency,coords)
+
+					d3.select('#tooltip').html()
 
 					
 					//console.log(map_labour.getSVG().select("#"+p))
@@ -375,13 +383,13 @@
 			},
 			callbackOut:function(constituency){
 
-				console.log(constituency)
+				//console.log(constituency)
 
 				//d3.select("#" + constituency.id).classed("selected", false);
 			}
 		})
 
-		var map_conservative=new ActiveMap("lab_con.svg",{
+		/*var map_conservative=new ActiveMap("lab_con.svg",{
 			container:"#map_con",
 			active:["#con"],
 			inactive:["#lab"],
@@ -400,7 +408,7 @@
 		  return this.each(function(){
 		    this.parentNode.appendChild(this);
 		  });
-		};
+		};*/
 
 		/*http://interactive.guim.co.uk/spreadsheetdata/1n5p8pJXNcPW4M3q_CackOhKJveSSVUIzSm_qloHOmrQ.json*/
 
