@@ -453,17 +453,17 @@
 		l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7V1179.6"/>
 	
 		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M55.8,994.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V994.8"/>
-	
-		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M64.4,989.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7V989.8"/>
-	
-		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M67.3,974.8l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V974.8"/>
-	
-		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M75.9,979.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3
+		M55.8,994.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V994.8 M64.4,989.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7V989.8 M67.3,974.8l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V974.8 M75.9,979.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3
 		l-2.9,1.7V979.8"/>
+	
+		<!-- <path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"/>
+	
+		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"/>
+	
+		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"/> -->
 	
 		<path id="S14000008" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M176.9,1064.7l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
@@ -505,22 +505,22 @@
 		l2.9-1.7l2.9,1.7l2.9-1.7L150.9,966.5"/>
 	
 		<path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M119.2,884.9l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V884.9"/>
-	
-		<path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M125,874.9l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V874.9"
-		/>
-	
-		<path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M168.2,816.6v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
+		M119.2,884.9l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V884.9 M125,874.9l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V874.9 M168.2,816.6v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
 		l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3L168.2,816.6"/>
 	
-		<path id="S14000055" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M78.8,921.5v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L78.8,921.5"/>
+		<!-- <path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"
+		/> -->
+	
+		<!-- <path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"/> -->
 	
 		<path id="S14000055" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M104.8,916.5v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7
+		M78.8,921.5v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L78.8,921.5 M104.8,916.5v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7
 		v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L104.8,916.5"/>
+	
+		<!-- <path id="S14000055" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"/> -->
 	
 		<path id="S14000058" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M159.6,931.5v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7
@@ -685,22 +685,23 @@
 		l2.9-1.7l2.9,1.7l2.9-1.7L150.9,966.5"/>
 	
 		<path id="S14000051" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M119.2,884.9l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V884.9"/>
+		M119.2,884.9l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V884.9 M125,874.9l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V874.9 M168.2,816.6v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
+		l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3L168.2,816.6"/>
 	
-		<path id="S14000051" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<!-- <path id="S14000051" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M125,874.9l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V874.9"
 		/>
 	
 		<path id="S14000051" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M168.2,816.6v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
-		l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3L168.2,816.6"/>
+		l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3L168.2,816.6"/> -->
 	
 		<path id="S14000055" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M78.8,921.5v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L78.8,921.5"/>
-	
-		<path id="S14000055" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
-		M104.8,916.5v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7
+		M78.8,921.5v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L78.8,921.5 M104.8,916.5v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7
 		v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L104.8,916.5"/>
+	
+		<!-- <path id="S14000055" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		"/> -->
 	
 		<path id="W07000041" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M76,1289.2l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3
