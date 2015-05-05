@@ -379,8 +379,8 @@
 				d3.select('#tooltip').classed("inactive", false)
 
 				//d3.selectAll(".selected").classed("selected",false)
-				d3.selectAll(".constituency" ).classed("selected", false);
-				d3.select("#" + constituency.id).classed("selected", true);
+				d3.selectAll("#lab_container .constituency" ).classed("selected", false);
+				d3.select("#lab_container #" + constituency.id).classed("selected", true);
 
 				constituency.paths.forEach(function(p){
 
@@ -396,8 +396,8 @@
 					.html(
 						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for the <b>' + datum[constituency.id].tacticalvote + '</b></p>'
 						)
-					.style('top',  coords[1] + 'px')
-					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth+ 'px'; else return mapLeft + coords[0] + 'px'});
+					.style('top',  coords[1] - 25 + 'px')
+					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
 
 				});
 			},
@@ -415,11 +415,9 @@
 
 				d3.select('#tooltip').classed("inactive", false)
 
-				console.log(document.getElementById('con_map').offsetTop)
-
 				//d3.selectAll(".selected").classed("selected",false)
-				d3.selectAll(".constituency" ).classed("selected", false);
-				d3.select("#" + constituency.id).classed("selected", true);
+				d3.selectAll("#con_container .constituency" ).classed("selected", false);
+				d3.select("#con_container #" + constituency.id).classed("selected", true);
 
 				constituency.paths.forEach(function(p){
 
@@ -435,8 +433,8 @@
 					.html(
 						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for the <b>' + datum[constituency.id].tacticalvote + '</b></p>'
 						)
-					.style('top',  document.getElementById('con_container').offsetTop + coords[1] + 'px')
-					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth+ 'px'; else return mapLeft + coords[0] + 'px'});
+					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 25 + 'px')
+					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
 
 				});
 			},
