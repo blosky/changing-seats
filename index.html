@@ -401,7 +401,7 @@
 
 					d3.select('#tooltip')
 					.html(
-						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[constituency.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  coords[1] - 25 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
@@ -436,7 +436,7 @@
 
 					d3.select('#tooltip')
 					.html(
-						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[constituency.id].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 25 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
