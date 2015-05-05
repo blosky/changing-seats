@@ -219,7 +219,7 @@
 		M312.4,1495.9v3.3l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3
 		l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L312.4,1495.9"/>
 	
-		<path id="E14000598_2_" vector-effect="none" display="inline" fill="#33A22B" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="E14000598" vector-effect="none" display="inline" fill="#33A22B" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M355.6,1550.8v3.3l2.9,1.7l2.9-1.7l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3
 		l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L355.6,1550.8"/>
 	
@@ -452,16 +452,16 @@
 		M289.3,1179.6l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7
 		l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7V1179.6"/>
 	
-		<path id="S14000005_7_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M55.8,994.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V994.8"/>
 	
-		<path id="S14000005_6_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M64.4,989.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7V989.8"/>
 	
-		<path id="S14000005_5_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M67.3,974.8l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V974.8"/>
 	
-		<path id="S14000005_4_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M75.9,979.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3
 		l-2.9,1.7V979.8"/>
 	
@@ -469,7 +469,7 @@
 		M176.9,1064.7l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
 		l2.9,1.7l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7V1064.7"/>
 	
-		<path id="S14000009_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000009" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M107.7,901.6v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7
 		v3.3l2.9,1.7l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7v3.3L107.7,901.6"/>
 	
@@ -482,52 +482,52 @@
 		M153.8,1074.7l2.9,1.7l2.9-1.7l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7
 		v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7V1074.7"/>
 	
-		<path id="S14000018_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000018" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M107.7,974.8l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3
 		l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V974.8"/>
 	
-		<path id="S14000026_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000026" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M148,1001.4v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7
 		v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7L148,1001.4"/>
 	
-		<path id="S14000037_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000037" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M179.7,916.5v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7
 		l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7
 		l2.9-1.7l2.9,1.7l2.9-1.7L179.7,916.5"/>
 	
-		<path id="S14000039_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000039" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M113.4,921.5v3.3l2.9,1.7l2.9-1.7l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7
 		v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L113.4,921.5"/>
 	
-		<path id="S14000049_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000049" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M150.9,966.5v3.3l2.9,1.7l2.9-1.7l2.9,1.7v3.3l2.9,1.7l2.9-1.7l2.9,1.7v3.3l2.9,1.7l2.9-1.7l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7
 		l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3
 		l2.9-1.7l2.9,1.7l2.9-1.7L150.9,966.5"/>
 	
-		<path id="S14000051_5_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M119.2,884.9l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V884.9"/>
 	
-		<path id="S14000051_4_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M125,874.9l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V874.9"
 		/>
 	
-		<path id="S14000051_3_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000051" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M168.2,816.6v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
 		l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3L168.2,816.6"/>
 	
-		<path id="S14000055_3_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000055" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M78.8,921.5v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L78.8,921.5"/>
 	
-		<path id="S14000055_2_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000055" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M104.8,916.5v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7
 		v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L104.8,916.5"/>
 	
-		<path id="S14000058_1_" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000058" vector-effect="none" display="inline" fill="#FCDD03" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M159.6,931.5v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7
 		l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7
 		l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7L159.6,931.5"/>
 	
-		<path id="W07000067_1_" vector-effect="none" display="inline" fill="#868686" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="W07000067" vector-effect="none" display="inline" fill="#868686" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M110.5,1376v3.3l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7L99,1396l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3
 		l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L110.5,1376"/>
 	
@@ -645,13 +645,13 @@
 		M387.4,1396v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
 		l2.9,1.7l2.9-1.7L387.4,1396"/>
 	
-		<path id="S14000005_3_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M55.8,994.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V994.8"/>
 	
-		<path id="S14000005_2_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M64.4,989.8l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l-2.9,1.7V989.8"/>
 	
-		<path id="S14000005_1_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000005" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M67.3,974.8l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V974.8"/>
 	
 		<path id="S14000005" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
@@ -684,10 +684,10 @@
 		l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3
 		l2.9-1.7l2.9,1.7l2.9-1.7L150.9,966.5"/>
 	
-		<path id="S14000051_2_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000051" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M119.2,884.9l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7V884.9"/>
 	
-		<path id="S14000051_1_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000051" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M125,874.9l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7V874.9"
 		/>
 	
@@ -695,7 +695,7 @@
 		M168.2,816.6v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
 		l2.9,1.7v3.3l-2.9,1.7v3.3l2.9,1.7v3.3L168.2,816.6"/>
 	
-		<path id="S14000055_1_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="S14000055" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M78.8,921.5v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L78.8,921.5"/>
 	
 		<path id="S14000055" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" d="
@@ -758,7 +758,7 @@
 		M136.5,1434.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7
 		v3.3l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7v3.3l2.9,1.7V1434.3"/>
 	
-		<path id="E14000669_1_" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="E14000669" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M318.3,1207.5v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3
 		l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7l2.9,1.7l2.9-1.7L318.3,1207.5"/>
 	<path id="E14000671" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
@@ -768,14 +768,14 @@
 		M205.9,1332.3v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7
 		l2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7v-3.3l2.9-1.7l2.9,1.7v3.3L205.9,1332.3"/>
 	
-		<path id="W07000064_1_" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="W07000064" vector-effect="none" fill="#FFB900" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M87.8,1400.5l-2.9,1.7l-2.9-1.7l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7v-3.3l2.9-1.7
 		v-3.3l2.9-1.7l2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7V1400.5"/>
 	<path id="E14000879" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M84.9,1541.9v3.3l2.9,1.7v3.3l2.9,1.7v3.3l-2.9,1.7l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7
 		v-3.3l2.9-1.7l2.9,1.7l2.9-1.7l2.9,1.7l2.9-1.7L84.9,1541.9"/>
 	
-		<path id="E14000716_1_" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
+		<path id="E14000716" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
 		M361.4,1231.2v3.3l2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7v3.3l-2.9,1.7l-2.9-1.7v-3.3l-2.9-1.7v-3.3l-2.9-1.7v-3.3l2.9-1.7v-3.3
 		l2.9-1.7l2.9,1.7l2.9-1.7L361.4,1231.2"/>
 	<path id="E14000903" vector-effect="none" fill="#7D0069" stroke="#FFFFFF" stroke-linecap="square" stroke-linejoin="bevel" d="
