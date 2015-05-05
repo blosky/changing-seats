@@ -358,8 +358,21 @@
 
 				map_labour.setClone(path);
 
+				d3.select('#tooltip').classed("inactive", false)
+
+				d3.select('#tooltip')
+				.html(
+						'<p>In <b>' + datum[this.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id].tacticalvoteText + '</b></p>'
+						)
+					.style('top',  map_labour.getCloneCenter()[1] - 50 + 'px')
+					.style('left', function(){if(mapLeft + map_labour.getCloneCenter()[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + map_labour.getCloneCenter()[0] + 'px'});
+
+
 				d3.selectAll('.constituency_list .constituency').attr('class', 'constituency');
 				d3.select(this).attr('class', 'constituency selected');
+
+
+				console.log(d3.select("#con #" + this.id))
 			}
 			
 
@@ -368,6 +381,15 @@
 				var path = d3.select('#con_map #map #con #' + this.id ).attr("d");
 
 				map_conservative.setClone(path);
+
+				d3.select('#tooltip').classed("inactive", false)
+
+				d3.select('#tooltip')
+				.html(
+						'<p>In <b>' + datum[this.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id].tacticalvoteText + '</b></p>'
+						)
+					.style('top',  document.getElementById('con_container').offsetTop + map_conservative.getCloneCenter()[1] - 50 + 'px')
+					.style('left', function(){if(mapLeft + map_conservative.getCloneCenter()[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + map_conservative.getCloneCenter()[0] + 'px'});
 
 				d3.selectAll('.constituency_list .constituency').attr('class', 'constituency');
 
@@ -384,11 +406,8 @@
 			inactive:["#con"],	
 			callback:function(constituency,coords){
 
-				console.log(String(datum[constituency.id].tacticalvoteText).substr(0,2));
-
 				d3.select('#tooltip').classed("inactive", false)
 
-				//d3.selectAll(".selected").classed("selected",false)
 				d3.selectAll("#lab_container .constituency" ).classed("selected", false);
 				d3.select("#lab_container #" + constituency.id).classed("selected", true);
 
@@ -404,7 +423,7 @@
 					.html(
 						'<p>In <b>' + datum[constituency.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
 						)
-					.style('top',  coords[1] - 25 + 'px')
+					.style('top',  coords[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
 
 				});
@@ -439,7 +458,7 @@
 					.html(
 						'<p>In <b>' + datum[constituency.id].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
 						)
-					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 25 + 'px')
+					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
 
 				});

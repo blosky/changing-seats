@@ -15,7 +15,8 @@ function ActiveMap(url,options) {
 		createMap(xml);
 
 	});
-	var clone;
+	var clone,
+		clone_center;
 	function createMap(svgXML) {
 
 		container=d3.select(options.container || "body");
@@ -70,11 +71,15 @@ function ActiveMap(url,options) {
 	this.setClone=function(path) {
 		if(!path) {
 			clone.attr("d","");
+			clone_center=null;
 			return;
 		}
 		clone.attr("d",path);
+		clone_center=getCentroid(clone.node());
 	}
-
+	this.getCloneCenter=function() {
+		return [(clone_center[0]+translate[0])*scale,(clone_center[1]+translate[1])*scale];
+	}
 	function setCentroids() {
 
 		svg.selectAll(options.active+" path").each(function(d){
