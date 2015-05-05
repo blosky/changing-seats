@@ -344,7 +344,6 @@
 
 		function labClicked(event)
 		{
-			console.log(this.id)
 			var path = d3.selectAll('#lab_map #map #lab #' + this.id ).attr("d");
 
 
@@ -358,7 +357,6 @@
 
 		function conClicked(event)
 			{
-				console.log(this)
 				var path = d3.select('#con_map #map #con #' + this.id ).attr("d");
 
 				map_conservative.setClone(path);
@@ -391,8 +389,6 @@
 
 
 					map_labour.setClone(path);
-
-					console.log(coords)
 
 					d3.select('#tooltip')
 					.html(
@@ -428,8 +424,6 @@
 
 
 					map_conservative.setClone(path);
-
-					console.log(coords)
 
 					d3.select('#tooltip')
 					.html(
