@@ -73,11 +73,11 @@
 
 
 		h1 {
-			font-family: "Guardian Egyptian Web",Georgia,serif;
-			font-size: 32px;
-			font-weight: normal;
-			color: #000;
-			line-height: 38px;
+			line-height: 1.2;
+			  font-family: "Guardian Egyptian Web",Georgia,serif;
+			  font-size: 22px;
+			  font-weight: bold;
+			  padding-top: 5px;
 		}
 
 		.f-standfirst {
@@ -137,6 +137,9 @@
 			 
 			  border-bottom: none;
 			  cursor: inherit;
+
+  			margin: 0 1px 0px 0;
+
 			}
 		}
 	</style>
@@ -311,7 +314,8 @@
 						rowNumber:data.sheets.Sheet1[i].rowNumber,
 						scenario:data.sheets.Sheet1[i].scenario,
 						second:data.sheets.Sheet1[i].second,
-						tacticalvote:data.sheets.Sheet1[i].tacticalvote
+						tacticalvote:data.sheets.Sheet1[i].tacticalvote,
+						tacticalvoteText:data.sheets.Sheet1[i].tacticalvotetext
 					}
 
 
@@ -324,7 +328,7 @@
 						.on('click', labClicked)
 						.append("a")
 						.attr("id", d.proid)
-						.html(function(){return d.name + ', '})
+						.html(d.name + ', ')
 					}
 
 					else
@@ -335,7 +339,7 @@
 						.attr("id", d.proid)
 						.on('click', conClicked)
 						.append("a")
-						.html(d.name);
+						.html(d.name + ', ');
 					}
 					
 				});
@@ -376,6 +380,8 @@
 			inactive:["#con"],	
 			callback:function(constituency,coords){
 
+				console.log(String(datum[constituency.id].tacticalvoteText).substr(0,2));
+
 				d3.select('#tooltip').classed("inactive", false)
 
 				//d3.selectAll(".selected").classed("selected",false)
@@ -392,7 +398,7 @@
 
 					d3.select('#tooltip')
 					.html(
-						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for the <b>' + datum[constituency.id].tacticalvote + '</b></p>'
+						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  coords[1] - 25 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
@@ -427,7 +433,7 @@
 
 					d3.select('#tooltip')
 					.html(
-						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for the <b>' + datum[constituency.id].tacticalvote + '</b></p>'
+						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 25 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
