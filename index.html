@@ -386,7 +386,7 @@
 
 				d3.select('#tooltip')
 				.html(
-						'<p>In <b>' + datum[this.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[this.id].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  document.getElementById('con_container').offsetTop + map_conservative.getCloneCenter()[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + map_conservative.getCloneCenter()[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + map_conservative.getCloneCenter()[0] + 'px'});
