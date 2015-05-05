@@ -308,7 +308,9 @@
 				{
 					parties.push(d.tacticalvote);
 
-					datum[data.sheets.Sheet1[i].proid] =
+					console.log(data.sheets.Sheet1[i].proid + "_" + data.sheets.Sheet1[i].scenario)
+
+					datum[data.sheets.Sheet1[i].proid + "_" + data.sheets.Sheet1[i].scenario] =
 					{
 						margin:data.sheets.Sheet1[i].margin,
 						margin_2:data.sheets.Sheet1[i].margin_2,
@@ -343,6 +345,7 @@
 						.attr("id", d.proid)
 						.on('click', conClicked)
 						.append("a")
+						.attr("id", d.proid)
 						.html(d.name + ' ');
 					}
 					
@@ -362,7 +365,7 @@
 
 				d3.select('#tooltip')
 				.html(
-						'<p>In <b>' + datum[this.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[this.id + '_' + 'lab'].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id + '_' + 'lab'].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  map_labour.getCloneCenter()[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + map_labour.getCloneCenter()[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + map_labour.getCloneCenter()[0] + 'px'});
@@ -371,8 +374,6 @@
 				d3.selectAll('.constituency_list .constituency').attr('class', 'constituency');
 				d3.select(this).attr('class', 'constituency selected');
 
-
-				console.log(d3.select("#con #" + this.id))
 			}
 			
 
@@ -386,7 +387,7 @@
 
 				d3.select('#tooltip')
 				.html(
-						'<p>In <b>' + datum[this.id].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[this.id + '_' + 'tory'].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[this.id + '_' + 'tory'].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  document.getElementById('con_container').offsetTop + map_conservative.getCloneCenter()[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + map_conservative.getCloneCenter()[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + map_conservative.getCloneCenter()[0] + 'px'});
@@ -421,7 +422,7 @@
 
 					d3.select('#tooltip')
 					.html(
-						'<p>In <b>' + datum[constituency.id].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[constituency.id + '_' + 'lab'].name + '</b>, if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id + '_' + 'lab'].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  coords[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
@@ -456,7 +457,7 @@
 
 					d3.select('#tooltip')
 					.html(
-						'<p>In <b>' + datum[constituency.id].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
+						'<p>In <b>' + datum[constituency.id + '_' + 'tory'].name + '</b>, if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id + '_' + 'tory'].tacticalvoteText + '</b></p>'
 						)
 					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 50 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
