@@ -63,6 +63,7 @@ function ActiveMap(url,options) {
 							.append("path")
 							.attr("class","selected")
 
+
 		
 	}
 	//setClone("MXXX,XXXLXX,XX") to show a path, setClone() to hide
@@ -109,6 +110,11 @@ function ActiveMap(url,options) {
 	function getCentroid(element) {
 	    var bbox = element.getBBox();
 	    return [bbox.x + bbox.width/2, bbox.y + bbox.height/2];
+	}
+
+	this.getCentroid = function(element)
+	{
+		return getCentroid(element);
 	}
 
     
