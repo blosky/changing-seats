@@ -9,7 +9,7 @@
 
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 	<script src="js/ActiveMap.js"></script>
-	<script src="http://interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js"></script>
+	<script src="//interactive.guim.co.uk/libs/iframe-messenger/iframeMessenger.js"></script>
 
 
 
@@ -133,12 +133,12 @@
 
 			#map{display: none}
 			.text_content{width:100%;}
+
+			.constituency{margin-bottom:1px;}
 			.constituency a{
 			 
 			  border-bottom: none;
 			  cursor: inherit;
-
-  			margin: 0 1px 0px 0;
 
 			}
 		}
@@ -184,7 +184,7 @@
 						<ul>
 							<li class="f-standfirst">
 								<span class="keycolor pc"></span>
-								Vote for Plaid Cymru in these constituencies:
+								Vote for PC in these constituencies:
 							</li>
 						</ul>
 					</div>
@@ -198,7 +198,7 @@
 						<ul>
 							<li class="f-standfirst">
 								<span class="keycolor snp"></span>
-								Vote for the SNP in these constituencies:
+								Vote for SNP in these constituencies:
 							</li>
 						</ul>
 					</div>
@@ -212,7 +212,7 @@
 						<ul>
 							<li class="f-standfirst">
 								<span class="keycolor green"></span>
-								Vote Green in these constituencies:
+								Vote for Green in these constituencies:
 							</li>
 						</ul>
 					</div>
@@ -229,7 +229,7 @@
 		</div>
 
 		<div id="con_container" class='module'>
-			<h1>If you want David Cameron to be prime minister ... </h1>
+			<h1>If you want tories to win...</h1>
 			<div class='text_content'>
 
 				<div id="party_key1" class="party_key">
@@ -237,7 +237,7 @@
 						<ul>
 							<li class="f-standfirst">
 								<span class="keycolor lib"></span>
-								Vote for the Lib Dems in these constituencies:
+								Vote for LibDem in these constituencies:
 							</li>
 						</ul>
 					</div>
@@ -315,11 +315,7 @@
 						scenario:data.sheets.Sheet1[i].scenario,
 						second:data.sheets.Sheet1[i].second,
 						tacticalvote:data.sheets.Sheet1[i].tacticalvote,
-<<<<<<< HEAD
 						tacticalvoteText:data.sheets.Sheet1[i].tacticalvotetext
-=======
-						tacticalvotetext:data.sheets.Sheet1[i].tacticalvotetext
->>>>>>> origin/gh-pages
 					}
 
 
@@ -402,11 +398,7 @@
 
 					d3.select('#tooltip')
 					.html(
-<<<<<<< HEAD
 						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
-=======
-						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>Ed Miliband</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvotetext + '</b></p>'
->>>>>>> origin/gh-pages
 						)
 					.style('top',  coords[1] - 25 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
@@ -441,11 +433,7 @@
 
 					d3.select('#tooltip')
 					.html(
-<<<<<<< HEAD
 						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for <b>' + datum[constituency.id].tacticalvoteText + '</b></p>'
-=======
-						'<p>In <b>' + datum[constituency.id].name + '</b> if you want <b>David Cameron</b> to be prime minister, you should consider a tactical vote for the <b>' + datum[constituency.id].tacticalvotetext + '</b></p>'
->>>>>>> origin/gh-pages
 						)
 					.style('top',  document.getElementById('con_container').offsetTop + coords[1] - 25 + 'px')
 					.style('left', function(){if(mapLeft + coords[0] + document.getElementById('tooltip').offsetWidth > mapLeft + mapWidth)return mapLeft + mapWidth - document.getElementById('tooltip').offsetWidth -50 + 'px'; else return mapLeft + coords[0] + 'px'});
