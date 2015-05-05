@@ -319,7 +319,7 @@
 						.append("li")
 						.attr("class", "constituency")
 						.attr("id", d.proid)
-						.on('click', conClicked)
+						.on('click', labClicked)
 						.append("a")
 						.attr("id", d.proid)
 						.html(function(){return d.name + ', '})
@@ -340,12 +340,10 @@
 			
 		});
 
-		function conClicked(event)
+		function labClicked(event)
 		{
-			if(document.getElementById(this.id).parentNode.parentNode.parentNode.parentNode.parentNode.id == 'lab_container')
-			{
-
-				var path = d3.selectAll('#lab_map #map #lab #' + this.id + "_2_").attr("d");
+			console.log(this.id)
+			var path = d3.selectAll('#lab_map #map #lab #' + this.id ).attr("d");
 
 
 
@@ -354,17 +352,21 @@
 				d3.selectAll('.constituency_list .constituency').attr('class', 'constituency');
 				d3.select(this).attr('class', 'constituency selected');
 			}
+			
 
-			else
+		function conClicked(event)
 			{
-				var path = d3.select('#con_map #map #con #' + this.id + "_2_").attr("d");
+				console.log(this)
+				var path = d3.select('#con_map #map #con #' + this.id ).attr("d");
 
 				map_conservative.setClone(path);
 
 				d3.selectAll('.constituency_list .constituency').attr('class', 'constituency');
+
+				
 				d3.select(this).attr('class', 'constituency selected');
 			}
-		}
+		
 
 
 
